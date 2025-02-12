@@ -43,10 +43,23 @@ let isLoggedIn = false
 
 */
 
-let name="hitesh"
-let age=18
-let isLoggedIn = false 
+// let name="hitesh"
+// let age=18
+// let isLoggedIn = false 
 
-console.log(typeof age)
-console.log(typeof null)
-console.log(typeof undefined)
+// console.log(typeof age)
+// console.log(typeof null)
+// console.log(typeof undefined)
+
+
+/* 3.Datatype conversion confusion */
+
+let score = true
+
+console.log(typeof score)
+console.log(typeof (score))
+
+let valueInnumber = Number(score)
+console.log(typeof valueInnumber)
+console.log(valueInnumber)
+
