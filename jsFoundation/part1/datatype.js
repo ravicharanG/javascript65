@@ -23,9 +23,13 @@ let name = "chaicode.com";
 let isLoggedin = false;
 
 //object
-let teaTypes = ["lemon tea", "orange tea", "oolong tea"];
-let user = { firstname: "hitesh", lastname: "choudhary" };
+let sportTypes = ["cricket","tennis","badminton"]
+let user = { firstname: "ravi", lastname: "charan" };
 
 let getScore = score;
 
 console.log(getScore);
+console.log(sportTypes);
+
+
+
