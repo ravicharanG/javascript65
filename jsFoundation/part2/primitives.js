@@ -37,3 +37,12 @@ let sm1 = Symbol("hitesh");
 let sm2 = Symbol("hitesh");
 
 console.log(sm1);
+
+
+
+
+let bal=18;
+let anbal = new Number(18);
+
+console.log(typeof bal);
+console.log(typeof anbal);

@@ -15,7 +15,7 @@ myscore++;
 
 let credits = 56;
 credits--;
-
+console.log(myscore,credits);
 // Comparion operation
 
 let num1 = 3;
