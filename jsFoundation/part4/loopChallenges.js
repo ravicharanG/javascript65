@@ -31,13 +31,14 @@ while (j > 0) {
 let teaCollection = [];
 let tea;
 
-// do {
-//   tea = prompt(`Enter your favourite tea (type "stop" to finish)`);
+do{
+  tea = prompt(`enter your favourite tea ( enter 'stop' to terminate the prompt)`);
 
-//   if (tea !== "stop") {
-//     teaCollection.push(tea);
-//   }
-// } while (tea !== "stop");
+  if(tea!=="stop")
+    teaCollection.push(tea);
+
+ }while(tea!=="stop");
+
 
 /* 
 4. Write a `do while` loop that adds numbers from 1 to 3 and stores the result in a variable named `total`.
@@ -76,4 +77,4 @@ for (let c = 0; c < cities.length; c++) {
   const myCity = cities[c];
   cityList.push(myCity);
 }
-console.log(cityList);
+// console.log(cityList);

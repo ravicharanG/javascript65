@@ -22,14 +22,12 @@ for (let i = 0; i < teas.length; i++) {
 let cities = ["London", "New York", "Paris", "Berlin"];
 let visitedCities = [];
 
-for (let i = 0; i < cities.length; i++) {
-  if (cities[i] === "paris" || cities[i] === "Paris") {
-    continue;
-  }
-
+for(let i=0;i <cities.length;i++){
+  if(cities[i]=="Paris") continue;
   visitedCities.push(cities[i]);
 }
-// console.log(visitedCities);
+  
+console.log(visitedCities);
 
 /* 
 3. Use a `for-of` loop to iterate through the array `[1, 2, 3, 4, 5]` and stop when the number `4` is found. 

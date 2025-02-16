@@ -12,8 +12,9 @@ const firstTea = teaFlavors[0];
    Access the third element in the array and store it in a variable named `favoriteCity`.
 */
 
-let cities = ["London", "Tokyo", "Paris", "New York"];
-const favoriteCity = cities[2];
+let cities =["London", "Tokyo", "Paris" ,"New York"];
+
+const favouriteCity =cities[2];
 
 /* 
 3. You have an array named `teaTypes` containing `"herbal tea"`, `"white tea"`, and `"masala chai"`. 
@@ -27,6 +28,7 @@ let teaTypes = ["herbel tea", "white tea", "masala chai"];
 */
 
 let citiesVisited = ["Mumbai", "Sydney"];
+citiesVisited[citiesVisited.length]="xiongan";
 citiesVisited.push("Berlin");
 // console.log(citiesVisited);
 
@@ -44,10 +46,10 @@ const lastOrder = teaOrders.pop();
 */
 
 let popularTeas = ["green tea", "oolong tea", "chai"];
-let softCopyTeas = popularTeas;
+let softCopyTeas=popularTeas;
 popularTeas.pop();
-// console.log(softCopyTeas);
-// console.log(popularTeas);
+console.log(softCopyTeas);
+console.log(popularTeas);
 
 /* 
 7. You have an array named `topCities` containing `"Berlin"`, `"Singapore"`, and `"New York"`. 
@@ -58,15 +60,15 @@ let topCities = ["Berlin", "Singapore", "New York"];
 let hardCopyCities = [...topCities];
 // let hardCopyCities = topCities.slice();
 topCities.pop();
-// console.log(hardCopyCities);
+console.log(hardCopyCities);
 
 /* 
 8. You have two arrays: `europeanCities` containing `"Paris"` and `"Rome"`, and `asianCities` containing `"Tokyo"` and `"Bangkok"`. 
    Merge these two arrays into a new array named `worldCities`.
 */
 
-let europeanCities = ["Paris", "Rome"];
-let asianCities = ["Tokyo", "Bangkok"];
+let europeanCities = ["Paris", "Rome","Amsterdam"];
+let asianCities = ["Tokyo", "Bangkok","xiongan","vizag"];
 let worldCities = europeanCities.concat(asianCities);
 
 console.log(worldCities);
@@ -85,6 +87,8 @@ let menuLength = teaMenu.length;
     Check if `"London"` is in the array and store the result in a variable named `isLondonInList`.
 */
 
-let cityBucketList = ["Kyoto", "London", "Cape Town", "Vancouver"];
+let cityBucketList=["kyoto","London","CapeTown","Vancouver"]
 
-let isLondonInList = cityBucketList.includes("London");
+let isLondonInList=cityBucketList.includes("London");
+
+console.log(isLondonInList);

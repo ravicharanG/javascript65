@@ -46,3 +46,13 @@ let anbal = new Number(18);
 
 console.log(typeof bal);
 console.log(typeof anbal);
+
+
+let strione="hola ";
+let uname="gipsy";
+
+let oldstyle = strione +""+uname;
+console.log(oldstyle);
+
+let newstyle =`hello ${uname} !`;
+console.log(newstyle);
