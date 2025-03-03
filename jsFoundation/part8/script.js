@@ -21,7 +21,7 @@ document
 document.getElementById("changeOrder").addEventListener("click", function () {
   let coffeeType = document.getElementById("coffeeType");
   coffeeType.textContent = "Espresso";
-  coffeeType.style.backgroundColor = "brown";
+  coffeeType.style.backgroundColor = "blue";
   coffeeType.style.padding = "5px";
 });
 
@@ -77,9 +77,15 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 //example 10
-document
-  .getElementById("toggleHighlight")
-  .addEventListener("click", function () {
-    let descriptionText = document.getElementById("descriptionText");
-    descriptionText.classList.toggle("highlight");
-  });
+// document
+//   .getElementById("toggleHighlight")
+//   .addEventListener("click", function () {
+//     let descriptionText = document.getElementById("descriptionText");
+//     descriptionText.classList.toggle("highlight");
+//   });
+
+
+document.getElementById("toggleHighlight").addEventListener("click",function(){
+  document.getElementById("descriptionText").classList.toggle("highlight");
+})
+  

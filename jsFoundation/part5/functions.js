@@ -30,9 +30,12 @@ let orderConfirmation = orderTea("chai");
 Store the result in a variable named `totalCost`.
 */
 
-const calculateTotal = (price, quantity) => price * quantity;
+const calculateTotal = (price,quantity) => {
+   return price*quantity;
+}
 
-let totalCost = calculateTotal(499 * 100);
+let totalCost=calculateTotal(65,18);
+console.log(totalCost);
 
 /* 
 4. Write a function named `processTeaOrder` that takes another function, `makeTea`, as a parameter and calls it with the argument `"earl grey"`. 

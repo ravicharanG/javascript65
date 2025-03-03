@@ -27,7 +27,7 @@ for(let i=0;i <cities.length;i++){
   visitedCities.push(cities[i]);
 }
   
-console.log(visitedCities);
+// console.log(visitedCities);
 
 /* 
 3. Use a `for-of` loop to iterate through the array `[1, 2, 3, 4, 5]` and stop when the number `4` is found. 
@@ -36,7 +36,7 @@ console.log(visitedCities);
 let numbers = [1, 2, 3, 4, 5];
 let smallNumbers = [];
 
-for (const num of numbers) {
+for(const num in numbers ) {
   if (num === 4) {
     break;
   }
@@ -58,6 +58,7 @@ for (const tea of teaTypes) {
   }
   preferredTeas.push(tea);
 }
+
 
 /* 
 5. Use a `for-in` loop to loop through an object containing city populations. 
@@ -111,13 +112,13 @@ let worldCities = {
 };
 let largeCities = {};
 
-for (const city in worldCities) {
-  if (worldCities[city] < 3000000) {
-    continue;
-  }
-  largeCities[city] = worldCities[city];
-}
+for(const cities in worldCities){
 
+  if(worldCities[cities]<3000000) continue;
+
+  largeCities[cities]=worldCities[cities];
+}
+console.log(largeCities);
 /* 
 7. Write a `forEach` loop that iterates through the array `["earl grey", "green tea", "chai", "oolong tea"]`. 
    Stop the loop when `"chai"` is found, and store all previous tea types in an array named `availableTeas`.
@@ -143,13 +144,15 @@ teaCollection.forEach(function (tea) {
 let myWorldCities = ["Berlin", "Tokyo", "Sydney", "Paris"];
 let traveledCities = [];
 
-myWorldCities.forEach(function (city) {
-  if (city === "Sydney") {
+myWorldCities.forEach(function(citiy){
+
+  if(citiy === "sydney"){
     return;
   }
-  traveledCities.push(city);
+  traveledCities.push(citiy);
+
 });
-console.log(traveledCities);
+// console.log(traveledCities);
 
 /* 
 9. Write a `for` loop that iterates through the array `[2, 5, 7, 9]`. 

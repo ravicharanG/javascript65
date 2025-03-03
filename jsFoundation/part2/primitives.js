@@ -52,7 +52,9 @@ let strione="hola ";
 let uname="gipsy";
 
 let oldstyle = strione +""+uname;
-console.log(oldstyle);
+// console.log(oldstyle);
 
 let newstyle =`hello ${uname} !`;
-console.log(newstyle);
+// console.log(newstyle);
+
+
